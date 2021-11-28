@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Admin Dashboard</title>
+  </head>
+  <body class="body">
+
+    <div class="overlay"></div>
+
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="" alt="logo" class="image" />
+        </div>
+        <p class="hotel-name">JTND Hotel Name</p>
+      </div>
+    </header>
+
+    <main>
+
+    <div class="main-container">
+
+      <div class="container con1">
+        <div class="editor">
+            <form class="frm"> 
+          <textarea
+            name="editor1"
+            id="editor1"
+            cols="30"
+            rows="10"
+            class="editor1"
+          >My editor goes here.
+                </textarea
+          >
+        </form>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Assigned submit options
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <button class="dropdown-item" href="#" id="submit-all">Submit to All</button>
+            <button class="dropdown-item" href="#" id="submit-sup">Submit to Supervisor</button>
+            <button class="dropdown-item" href="#" id="submit-stf">Submit to Staff</button>
+            <button class="dropdown-item" href="#" id="delete-all1">Delete All</button>
+
+          </div>
+        </div>
+        <div class="display assign-co">
+          <h3>Assigned tasks</h3>
+          <ol id="myUL">
+            
+          </ol>
+
+        </div>
+      </div>
+
+      <div class="container con2">
+        <div class="editor">
+            <form class="frm">
+          <textarea
+            name="editor2"
+            id="editor2"
+            cols="30"
+            rows="10"
+            class="editor1"
+          >My editor goes here.
+                </textarea
+          >
+          
+        </form>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Personal Submit options
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <button class="dropdown-item" href="#" id="submit-psl">Submit Personal</button>
+            <button class="dropdown-item" href="#" id="delete-all">Delete All</button>
+          </div>
+        </div>
+        <div class="display personal-co">
+          <h3>Personal Tasks</h3>
+          <ol id="myUL2">
+
+          </ol>
+        </div>
+      </div>
+
+    </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./node_modules/ckeditor4/ckeditor.js"></script>
+    <script type="text/javascript" src="Admin.js"></script>
+  </body>
+</html>
